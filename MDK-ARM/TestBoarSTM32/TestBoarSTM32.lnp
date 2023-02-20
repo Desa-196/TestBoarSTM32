@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"testboarstm32\main.o"
+"testboarstm32\stm32f1xx_it.o"
+"testboarstm32\stm32f1xx_hal_msp.o"
+"testboarstm32\stm32f1xx_hal_gpio_ex.o"
+"testboarstm32\stm32f1xx_hal_tim.o"
+"testboarstm32\stm32f1xx_hal_tim_ex.o"
+"testboarstm32\stm32f1xx_hal.o"
+"testboarstm32\stm32f1xx_hal_rcc.o"
+"testboarstm32\stm32f1xx_hal_rcc_ex.o"
+"testboarstm32\stm32f1xx_hal_gpio.o"
+"testboarstm32\stm32f1xx_hal_dma.o"
+"testboarstm32\stm32f1xx_hal_cortex.o"
+"testboarstm32\stm32f1xx_hal_pwr.o"
+"testboarstm32\stm32f1xx_hal_flash.o"
+"testboarstm32\stm32f1xx_hal_flash_ex.o"
+"testboarstm32\stm32f1xx_hal_exti.o"
+"testboarstm32\stm32f1xx_hal_uart.o"
+"testboarstm32\startup_stm32f103xb.o"
+"testboarstm32\system_stm32f1xx.o"
+--strict --scatter "TestBoarSTM32\TestBoarSTM32.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "./TestBoarSTM32/\TestBoarSTM32.map" -o TestBoarSTM32\TestBoarSTM32.axf
