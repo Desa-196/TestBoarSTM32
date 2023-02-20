@@ -287,8 +287,9 @@ void HAL_UART_ErrorCallback ( UART_HandleTypeDef *huart)
 							setPosition += data[1];
 							setPosition = setPosition*multiplier;
 							set_speed = (data[2]/255.0)*0.7;
-						a = 1.0/((((data[3]*data[3])/65025.0)*2000000)+1500);
-							//a = 1.0/((data[3]*10000)+1500);
+							a = 1.0/((((data[3]*data[3])/65025.0)*2000000)+1500);
+							
+						//a = 1.0/((data[3]*10000)+1500);
 					}
 	//				__HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, 65535);
 	//				__HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_2, 64535);
